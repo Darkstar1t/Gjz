@@ -1,0 +1,7 @@
+cdk.out
+node_modules
+test
+*.test.js
+yarn.lock
+yarn-error.log
+.travis.yml

@@ -1,0 +1,191 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-font-family-base: "Source Sans Pro", sans-serif;
+  --ifm-heading-font-family: "Roboto Slab", serif;
+
+  --ifm-font-color-base: #383736;
+  --ifm-heading-color: #383736;
+
+  --ifm-color-primary: #e27152;
+  --ifm-color-primary-dark: #de5b38;
+  --ifm-color-primary-darker: #db512a;
+  --ifm-color-primary-darkest: #b9401f;
+  --ifm-color-primary-light: #e6876c;
+  --ifm-color-primary-lighter: #e9917a;
+  --ifm-color-primary-lightest: #efb2a1;
+
+  --ifm-color-secondary: #f4ece8;
+  --ifm-color-secondary-dark: #e5d1c8;
+  --ifm-color-secondary-darker: #ddc4b8;
+  --ifm-color-secondary-darkest: #c69c87;
+  --ifm-color-secondary-light: #ffffff;
+  --ifm-color-secondary-lighter: #ffffff;
+  --ifm-color-secondary-lightest: #ffffff;
+
+  --ifm-color-success: #52e271;
+  --ifm-color-success-dark: #38de5b;
+  --ifm-color-success-darker: #2adb51;
+  --ifm-color-success-darkest: #1fb940;
+  --ifm-color-success-light: #6ce687;
+  --ifm-color-success-lighter: #7ae991;
+  --ifm-color-success-lightest: #a1efb2;
+
+  --ifm-color-info: #52c3e2;
+  --ifm-color-info-dark: #38bade;
+  --ifm-color-info-darker: #2ab5db;
+  --ifm-color-info-darkest: #1f98b9;
+  --ifm-color-info-light: #6ccce6;
+  --ifm-color-info-lighter: #7ad1e9;
+  --ifm-color-info-lightest: #a1deef;
+
+  --ifm-color-danger: #db4d26;
+  --ifm-color-danger-dark: #c64521;
+  --ifm-color-danger-darker: #bb411f;
+  --ifm-color-danger-darkest: #9a351a;
+  --ifm-color-danger-light: #df5f3c;
+  --ifm-color-danger-lighter: #e06847;
+  --ifm-color-danger-lightest: #e68368;
+
+  --ifm-code-font-size: 95%;
+
+  /** Secondary text color **/
+  --custom-font-color-secondary: var(--ifm-menu-color);
+
+  /** Navbar **/
+  --ifm-navbar-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+
+  /** Table of contents **/
+  --ifm-toc-border-color: transparent;
+
+  /** DocSearch button **/
+  --custom-docsearch-searchbox-background: #f4f5f7;
+
+  /** Hide extra scrollbars **/
+  /**
+  --ifm-scrollbar-size: 0;
+  **/
+
+  /** Footer **/
+  --custom-footer-border-color: #f4f5f7;
+}
+
+.thin-scrollbar::-webkit-scrollbar {
+  width: revert !important;
+  height: revert !important;
+}
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: revert !important;
+  border-radius: revert !important;
+}
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: revert !important;
+  border-radius: revert !important;
+}
+
+:root[data-theme="dark"] {
+  /** DocSearch button **/
+  --custom-docsearch-searchbox-background: #4d4d4d;
+
+  /** Footer **/
+  --custom-footer-border-color: #4d4d4d;
+}
+
+html[data-theme="dark"] {
+  --ifm-font-color-base: #ffffff;
+  --ifm-heading-color: #ffffff;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.navbar__link {
+  font-weight: bold;
+}
+.navbar__link span svg:last-child {
+  /** Hide external link icon **/
+  display: none;
+}
+
+.menu__link {
+  font-size: 0.9375rem;
+}
+
+/** DocSearch button **/
+nav.navbar .DocSearch-Button {
+  padding: 0 22px;
+  border-radius: 8px;
+  background-color: var(--custom-docsearch-searchbox-background);
+}
+nav.navbar .DocSearch-Button .DocSearch-Search-Icon {
+  width: 14px;
+  height: 14px;
+  color: var(--docsearch-muted-color);
+}
+nav.navbar .DocSearch-Button .DocSearch-Button-Placeholder {
+  font-size: 0.9rem;
+  padding-right: 2px;
+  font-weight: normal;
+}
+nav.navbar .DocSearch-Button .DocSearch-Button-Keys {
+  display: none;
+}
+
+/** Announcement bar **/
+div[class^="announcementBar_"] {
+  height: 35px;
+}
+div[class^="announcementBar_"] > div {
+  padding: 6px 0;
+}
+div[class^="announcementBar_"] > div a {
+  font-weight: 600;
+  text-decoration: none;
+}
+div[class^="announcementBar_"] > div a:hover {
+  text-decoration: underline;
+}
+div[class^="announcementBar_"] > div span.star {
+  margin-left: 1px;
+  color: #777;
+  font-size: 12px;
+}
+
+/** Dark mode switch **/
+nav.navbar .react-toggle .react-toggle-track-x span,
+nav.navbar .react-toggle .react-toggle-track-check span {
+  visibility: hidden;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+h1 {
+  font-family: var(--ifm-heading-font-family);
+}
+
+.alert h5 {
+  color: var(--ifm-alert-color);
+}
+
+.footer {
+  border-top: 2px solid var(--custom-footer-border-color);
+  background-color: var(--ifm-background-color);
+}
+.footer__title,
+.menu > ul.menu__list > li.menu__list-item > a:first-child {
+  opacity: 0.75;
+  font-size: 0.9em;
+  font-weight: 700;
+  text-transform: uppercase;
+}

@@ -1,0 +1,5 @@
+{
+  "name": "cdk-command",
+  "stage": "prod",
+  "region": "us-west-1"
+}
